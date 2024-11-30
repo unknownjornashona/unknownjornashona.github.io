@@ -7,6 +7,13 @@ body {
     color: #333;
 }
 
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 /* 页头 */
 .header {
     background-color: #4CAF50;
@@ -25,38 +32,38 @@ body {
     font-size: 1.2em;
 }
 
+/* 按钮样式 */
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
 /* 项目简介 */
-.intro {
+.intro, .features, .installation, .usage, .contributing, .tech-stack, .project-details, .setup {
     background-color: #ffffff;
     padding: 40px 0;
 }
 
-.intro .container {
-    text-align: center;
-}
-
-.intro h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.intro p {
-    font-size: 1.1em;
-    color: #666;
-}
-
-/* 功能 */
-.features {
-    background-color: #f9f9f9;
-    padding: 40px 0;
-}
-
-.features h2 {
+.intro h2, .features h2, .installation h2, .usage h2, .contributing h2, .tech-stack h2, .setup h2 {
     font-size: 2.2em;
     text-align: center;
     margin-bottom: 30px;
 }
 
+.intro p, .features p, .usage p, .contributing p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+/* 功能区块 */
 .feature-list {
     display: flex;
     justify-content: space-around;
@@ -77,54 +84,13 @@ body {
     color: #4CAF50;
 }
 
-.feature p {
-    color: #666;
-}
-
-/* 安装步骤 */
-.installation {
-    padding: 40px 0;
-    background-color: #ffffff;
-}
-
-.installation ol {
-    font-size: 1.1em;
-    color: #333;
-}
-
-/* 使用说明 */
-.usage {
-    background-color: #f9f9f9;
-    padding: 40px 0;
-}
-
-.usage pre {
+/* 代码块 */
+pre {
     background-color: #eeeeee;
-    padding: 10px;
+    padding: 15px;
     border-radius: 5px;
     font-size: 1.1em;
     overflow-x: auto;
-}
-
-.usage code {
-    font-family: monospace;
-}
-
-/* 贡献说明 */
-.contributing {
-    background-color: #ffffff;
-    padding: 40px 0;
-}
-
-.contributing ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.contributing li {
-    font-size: 1.2em;
-    color: #333;
-    margin-bottom: 10px;
 }
 
 /* 页脚 */
